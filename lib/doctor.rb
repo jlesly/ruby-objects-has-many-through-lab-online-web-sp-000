@@ -24,7 +24,4 @@ class Doctor
     appointments.map {|appointment| appointment.patients}
   end
   
-    def genres 
-    songs.map {|song| song.genre} 
-  end 
 end
