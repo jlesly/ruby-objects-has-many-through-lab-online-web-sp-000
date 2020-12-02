@@ -21,6 +21,10 @@ class Doctor
   end
 
   def patients
-    appointments.map(&:patient)
+    appointments.map {|appointment| appointment.patients}
   end
+  
+    def genres 
+    songs.map {|song| song.genre} 
+  end 
 end
